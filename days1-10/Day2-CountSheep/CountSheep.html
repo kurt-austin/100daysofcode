@@ -8,24 +8,41 @@
 <body>
     <script>
 
+      var countSheep = prompt("Please enter an integer greater than 0");
+      var tot;
+      function parse(countSheep){
+           countSheepN = parseInt(countSheep);
+      
+          return countSheepN;
+     }
+ 
+     
+      parse (countSheep);
+      
 
-var a = prompt("Please enter an integer greater than 0");
+       while (Number.isInteger(countSheepN) !==true || countSheepN<=0){
+         alert("Please enter an integer greater than 0");
+         countSheep = prompt("Please enter an integer greater than 0");
+         parse(countSheep);
+          
+       }
 
-if (Number.isInteger (a) === false || Number.isInteger(a) <=0)
-{
-  alert ("Please enter a non-negative integer");
-  }
+      for(var i = 1; i <= countSheepN; i++){
+   
+          var murmur = (i.toString() + " sheep...");
+          if(i===1){
+            tot = murmur
+          } else{
+            tot = (tot + murmur); 
 
-var countSheep = function (num){
-  for(i=0, a, i++ ){
-  console.log(
+          } 
+            
+       }
+
+       alert(tot);
   
-}
 
-
-
-
-
+ 
 
     </script>
 
