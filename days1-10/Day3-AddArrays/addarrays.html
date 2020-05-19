@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            var arr1 = [1,2,3];
+            var arr2 = [4,5,6];
+            var tot;
+
+
+            function arrayPlusArray(arr1, arr2) {
+                var combine = arr1.concat(arr2)
+                alert("combine "+combine)
+                alert("combine length "+combine.length)
+                for(var i=0; i< combine.length; i++){
+                    alert("i "+i)
+                    if(i===0){
+                        tot = combine[i]
+                        alert("tot "+ tot)
+                    } else {
+                        tot = (tot + combine[i]); 
+                        alert("tot2 "+tot)
+                    } 
+    
+
+                }
+                return tot;
+            }
+arrayPlusArray(arr1,arr2);
+
+console.log(tot);
+
+
+
+
+    </script>
+</body>
+</html>
