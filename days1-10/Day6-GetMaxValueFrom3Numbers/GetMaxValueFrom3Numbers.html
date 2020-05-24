@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function expressionMatter(a, b, c) {
+    var maxValue = Math.max(a+b+c, (a+b)*c, a*(b+c), a*b*c);
+  return maxValue
+}
+   maxValue = 0;
+   answer = "";
+do{ 
+    var a = prompt("Enter an integer between 0 and 10")
+    var b = prompt("Enter an integer between 0 and 10")
+    var c = prompt("Enter an integer between 0 and 10")
+  var a = parseFloat(a);
+  var checka = isNaN(a);
+  
+  var passinta = Number.isInteger(a);
+
+  var b = parseFloat(b);
+  var checkb = isNaN(b);
+  
+  var passintb = Number.isInteger(b);
+
+  var c = parseFloat(c);
+  var checkc = isNaN(c);
+  
+  var passintc = Number.isInteger(c);
+  }
+while(checka === true || checkb === true||checkc === true|| a > 10 || b > 10 || c > 10 || a < 0||b<0 || c<0 || passinta===false || passintb === false || passintc === false);
+
+    answer = expressionMatter(a,b,c)
+    console.log(answer);
+  
+    </script>
+
+
+
+</body>
+</html>
