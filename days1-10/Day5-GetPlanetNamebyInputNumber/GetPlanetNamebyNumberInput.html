@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            function getPlanetName(id){
+    var name;
+    switch(id){
+      case 1:
+        name = 'Mercury';
+        break;
+      case 2:
+        name = 'Venus';
+        break;
+      case 3:
+        name = 'Earth';
+        break;
+      case 4:
+        name = 'Mars';
+        break;
+      case 5:
+        name = 'Jupiter';
+        break;
+      case 6:
+        name = 'Saturn';
+        break;
+      case 7:
+        name = 'Uranus';
+        break;
+      case 8:
+        name = 'Neptune'
+        break;
+    }
+    
+    return name;
+  }
+
+  do{ 
+  var planetNumber = prompt("Enter the number of the planet to get the name of the planet.");
+  var planetNumber = parseFloat(planetNumber);
+  var check = isNaN(planetNumber);
+  
+  var passint = Number.isInteger(planetNumber);
+  }
+while(check === true || planetNumber > 8 || passint === false || planetNumber < 1);
+
+ var planetName = getPlanetName(planetNumber);
+ 
+ console.log(planetName);
+
+    </script>
+</body>
+</html>
